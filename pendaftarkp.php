@@ -1,15 +1,3 @@
-<?php
-  //koneksi Database
-  $server = "localhost";
-  $user = "root";
-  $pass = "";
-  $database = "pendaftar_kp";
-
-  $koneksi = mysqli_connect($server, $user, $pass, $database)or die(mysqli_error($koneksi));
-
-?>
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -100,34 +88,27 @@
         <?php
         include "koneksi.php";
         $no = 1;
-        $tampil = mysqli_query($koneksi, "SELECT * from datapendaftar_kp order by id_datapendaftar_kp desc");
-        while($data = mysqli_fetch_array($tampil)) :
- 
+        $ambildata = mysqli_query($koneksi, "SELECT * from datapendaftar_kp");
+        while($tampil = mysqli_fetch_array($ambildata)) {
+          echo"
+          <tr>
+          
+            <td>$tampil[Id]</td>
+            <td>$tampil[Tempat_KP]</td>
+            <td>$tampil[Alamat_KP]</td>
+            <td>$tampil[Tanggal_mulai]</td>
+            <td>$tampil[Tanggal_selesai]</td>
+            <td>$tampil[Proposal]</td>
+            <td>$tampil[Anggota_kelompok_Id]</td>
+            <td>$tampil[Dosen_Id]</td>
+            <td>$tampil[Perusahan_Id]</td>
+          </tr>";
 
+          $Id;
+
+        }
         ?>
-        <tr>
-          <td><?=$no++;?></td>
-          <td><?=$data['Tempat_KP']?></td>
-          <td><?$data['Alamat_KP']?></td>
-          <td><?$data['Tanggal_mulai']?></td>
-          <td><?$data['Tanggal_selesai']?></td>
-          <td><?$data['Proposal']?></td>
-          <td><?$data['Anggota_kelompok_Id']?></td>
-          <td><?$data['Dosen_Id']?></td>
-          <td><?$data['Perusahaan_Id']?></td>
-          <td>
-            <a href="#" Edit </a>
-            <a href="#" Hapus </a>
-          </td>
-        </tr>
-        <?php endwhile; ?>
-      </table>
-
-      </div>
-    </div>
-    <!-- Akhir Card Tabel -->
-
-    
-</div>
+        
+      
   </body>
 </html>

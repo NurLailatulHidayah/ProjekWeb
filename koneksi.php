@@ -1,3 +1,3 @@
 <?php 
-    $koneksi = mysqli_connect("localhost","root","","phpdasar");
+    $koneksi = mysqli_connect("localhost","root","","pendaftar_kp");
 ?>
