@@ -1,9 +1,13 @@
 
 <?php
-	$server = "localhost";
-	$user = "root";
-	$pass = "";
-	$database = "phpdasar";
+  //koneksi Database
+  $server = "localhost";
+  $user = "root";
+  $pass = "";
+  $database = "pendaftar_kp";
+
+  $koneksi = mysqli_connect($server, $user, $pass, $database)or die(mysqli_error($koneksi));
+
 ?>
 <h2> Pendaftar Ujian KP </h2>
 
@@ -23,12 +27,12 @@
 	<?php
 
 	include "Koneksi.php";
-	//$no=1;
+	$no=1;
 	$ambildata = mysqli_query($koneksi,"select * from pendaftar_ujiankp");
 	while ($tampil = mysqli_fetch_array($ambildata)){
 		echo "
 		<tr>
-			//<td>$</td>
+			<td>$no</td>
 			<td>$tampil[Id]</td>
 			<td>$tampil[Tempat_kp]</td>
 			<td>$tampil[Alamat_kp]</td>
@@ -44,4 +48,7 @@
 	}
 	?>
 
-</table>
+    
+</div>
+  </body>
+</html>
