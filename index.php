@@ -1,6 +1,5 @@
 
 <?php
-  //koneksi Database
   $server = "localhost";
   $user = "root";
   $pass = "";
@@ -25,12 +24,10 @@
 	<?php
 
 	include "Koneksi.php";
-	$no=1;
 	$ambildata = mysqli_query($koneksi,"select * from pendaftar_ujiankp");
 	while ($tampil = mysqli_fetch_array($ambildata)){
 		echo "
 		<tr>
-			<td>$no</td>
 			<td>$tampil[Id]</td>
 			<td>$tampil[Tempat_kp]</td>
 			<td>$tampil[Alamat_kp]</td>
@@ -42,7 +39,7 @@
 			<td>$tampil[Perusahaan]</td>
 		</tr>";
 
-		$no++;
+		$Id;
 	}
 	?>
 
