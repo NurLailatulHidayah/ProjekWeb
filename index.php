@@ -1,3 +1,9 @@
+<?php
+	$server = "localhost";
+	$user = "root";
+	$pass = "";
+	$database = "phpdasar";
+?>
 <h2> Pendaftar Ujian KP </h2>
 
 <table border="1">
@@ -17,7 +23,7 @@
 
 	include "Koneksi.php";
 	$no=1;
-	$ambildata = mysqli_query($koneksi,"select * from pendaftar_ujian_kp");
+	$ambildata = mysqli_query($koneksi,"select * from pendaftar_ujiankp");
 	while ($tampil = mysqli_fetch_array($ambildata)){
 		echo "
 		<tr>
