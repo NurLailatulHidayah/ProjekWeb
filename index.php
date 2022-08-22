@@ -19,6 +19,7 @@
 		<th>Anggota_Kelompok</th>
 		<th>Dosen</th>
 		<th>Perusahaan</th>
+		<th>Aksi</th>
 	</tr>
 
 	<?php
