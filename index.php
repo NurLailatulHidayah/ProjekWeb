@@ -6,8 +6,6 @@
   $pass = "";
   $database = "pendaftar_kp";
 
-  $koneksi = mysqli_connect($server, $user, $pass, $database)or die(mysqli_error($koneksi));
-
 ?>
 <h2> Pendaftar Ujian KP </h2>
 
