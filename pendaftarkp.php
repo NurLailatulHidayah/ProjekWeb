@@ -101,7 +101,7 @@
             <td>$tampil[Proposal]</td>
             <td>$tampil[Anggota_kelompok_Id]</td>
             <td>$tampil[Dosen_Id]</td>
-            <td>$tampil[Perusahan_Id]</td>
+            <td>$tampil[Perusahaan_Id]</td>
           </tr>";
 
           $Id;
