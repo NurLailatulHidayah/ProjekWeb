@@ -1,13 +1,59 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+=======
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<?php
+  //koneksi Database
+  $server = "localhost";
+  $user = "root";
+  $pass = "";
+  $database = "pendaftar_kp";
 
+  $koneksi = mysqli_connect($server, $user, $pass, $database)or die(mysqli_error($koneksi));
+
+?>
+<h2> Pendaftar Ujian KP </h2>
+
+<table border="1">
+	<tr>
+		<th>Id</th>
+		<th>Tempat_KP</th>
+		<th>Alamat_KP</th>
+		<th>Tanggal_mulai</th>
+		<th>Tanggal_selesai</th>
+		<th>Proposal</th>
+		<th>Anggota_Kelompok</th>
+		<th>Dosen</th>
+		<th>Perusahaan</th>
+	</tr>
+
+	<?php
+>>>>>>> dc9d056082ed85162389f3295a3036a8f1e234d1
+
+	include "Koneksi.php";
+	$no=1;
+	$ambildata = mysqli_query($koneksi,"select * from pendaftar_ujiankp");
+	while ($tampil = mysqli_fetch_array($ambildata)){
+		echo "
+		<tr>
+			<td>$no</td>
+			<td>$tampil[Id]</td>
+			<td>$tampil[Tempat_kp]</td>
+			<td>$tampil[Alamat_kp]</td>
+			<td>$tampil[Tanggal_mulai]</td>
+			<td>$tampil[Tanggal_selesai]</td>
+			<td>$tampil[Proposal]</td>
+			<td>$tampil[Anggota_Kelompok]</td>
+			<td>$tampil[Dosen]</td>
+			<td>$tampil[Perusahaan]</td>
+		</tr>";
+
+<<<<<<< HEAD
     <title>Form Pendaftaran</title>
   </head>
   <body>
@@ -110,5 +156,13 @@
         ?>
         
       
+=======
+		$no++;
+	}
+	?>
+
+    
+</div>
+>>>>>>> dc9d056082ed85162389f3295a3036a8f1e234d1
   </body>
 </html>
