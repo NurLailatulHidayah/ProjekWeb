@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-=======
 
 <?php
   //koneksi Database
@@ -33,7 +31,6 @@
 	</tr>
 
 	<?php
->>>>>>> dc9d056082ed85162389f3295a3036a8f1e234d1
 
 	include "Koneksi.php";
 	$no=1;
@@ -53,14 +50,14 @@
 			<td>$tampil[Perusahaan]</td>
 		</tr>";
 
-<<<<<<< HEAD
+
     <title>Form Pendaftaran</title>
   </head>
   <body>
     <div class="container">
       <h1 class="text-center">Form Pendaftaran Mahasiswa KP</h1>
     <form method="post">
- <!-- Awal Card Form -->
+ //Awal Card Form
       <div class="card" mt-3>
         <div class="card-header bg-primary text-white ">
           Form Input Data Mahasiswa
@@ -109,9 +106,9 @@
         </form>
       </div>
     </div>
-  <!-- Akhir Card Form -->
+   //Akhir Card Form
 
-   <!-- Awal Card Tabel-->
+   //Awal Card Tabel
    <div class="card" mt-3>
         <div class="card-header bg-primary text-white ">
           Daftar Mahasiswa
@@ -155,14 +152,11 @@
         }
         ?>
         
-      
-=======
 		$no++;
 	}
 	?>
 
     
 </div>
->>>>>>> dc9d056082ed85162389f3295a3036a8f1e234d1
   </body>
 </html>
