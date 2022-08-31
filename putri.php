@@ -42,7 +42,7 @@ include "koneksi.php";
 
                     <?php
                     $no = 1;
-                    $tampil = mysqli_query($koneksi, "SELECT * FROM tmhs ORDER BY Id DESC");
+                    $tampil = mysqli_query($konek, "SELECT * FROM tmhs ORDER BY Id DESC");
                     while($data = mysqli_fetch_array($tampil)) :
                     
                     ?>

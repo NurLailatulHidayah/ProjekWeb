@@ -2,7 +2,7 @@
 include "koneksi.php";
 
 if (isset($_POST['bsimpan'])) {
-    $simpan = mysqli_query($koneksi, "INSERT INTO tmhs(Tempat_KP, Alamat_KP, Tanggal_mulai, Tanggal_selesai, Proposal, Anggota_kelompok_Id, Dosen_Id, Perusahaan_id)
+    $simpan = mysqli_query($konek, "INSERT INTO tmhs(Tempat_KP, Alamat_KP, Tanggal_mulai, Tanggal_selesai, Proposal, Anggota_kelompok_Id, Dosen_Id, Perusahaan_id)
                                       VALUES ('$_POST[ttempat]',
                                               '$_POST[talamat]',
                                               '$_POST[ttanggalmulai]',
@@ -26,7 +26,7 @@ if ($simpan){
 }
 
 if (isset($_POST['bubah'])) {
-    $ubah = mysqli_query($koneksi, "UPDATE tmhs SET 
+    $ubah = mysqli_query($konek, "UPDATE tmhs SET 
                                                 Tempat_KP = '$_POST[ttempat]',
                                                 Alamat_KP = '$_POST[talamat]',
                                                 Tanggal_mulai = '$_POST[ttanggalmulai]',
@@ -52,7 +52,7 @@ if ($ubah){
 }
 
 if (isset($_POST['bhapus'])) {
-    $hapus = mysqli_query($koneksi, "DELETE FROM tmhs WHERE Id = '$_POST[Id]'");
+    $hapus = mysqli_query($konek, "DELETE FROM tmhs WHERE Id = '$_POST[Id]'");
 
 if ($hapus){
     echo "<script>
