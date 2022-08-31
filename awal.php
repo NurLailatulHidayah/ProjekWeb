@@ -509,6 +509,68 @@
                           <?php endwhile; ?>
                         </table>
 
+                        <!--Awal Modal tambah data-->
+                  <div class="modal fade" id="ModalTambah" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Tambah Data</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form method="POST" action="aksi_crud.php">
+                          <div class="modal-body">
+
+                            <div class="mb-3">
+                              <label class="form-label">Tempat</label>
+                              <input type="text" class="form-control" name="tTempat_KP"> 
+                            </div>
+
+                            <div class="mb-3">
+                              <label class="form-label">Alamat</label>
+                              <input type="text" class="form-control" name="tAlamat_KP"> 
+                            </div>
+
+                            <div class="mb-3">
+                              <label class="form-label">Tgl Mulai</label>
+                              <input type="date" class="form-control" name="tTanggal_Mulai"> 
+                            </div>
+
+                            <div class="mb-3">
+                              <label class="form-label">Tgl Selesai</label>
+                              <input type="date" class="form-control" name="tTanggal_Selesai"> 
+                            </div>
+
+                            <div class="mb-3">
+                              <label class="form-label">Proposal</label>
+                              <input type="file" class="form-control" name="tProposal"> 
+                            </div>
+
+                            <div class="mb-3">
+                              <label class="form-label">Kelompok</label>
+                              <input type="text" class="form-control" name="tAnggota_Kelompok"> 
+                            </div>
+
+                            <div class="mb-3">
+                              <label class="form-label">Dosen</label>
+                              <input type="text" class="form-control" name="tDosen"> 
+                            </div>
+
+                            <div class="mb-3">
+                              <label class="form-label">Perusahaan</label>
+                              <input type="text" class="form-control" name="tPerusahaan"> 
+                            </div>
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" name="bsimpan">Simpan</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Akhir Modal -->
+
                   <!--Akhir Tabel Form -->
 
                       </div>
