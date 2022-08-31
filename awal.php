@@ -79,7 +79,7 @@ include "koneksi.php";
                       <h5 class="modal-title" id="staticBackdropLabel">Ubah Data</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form method="POST" action="aksi_laila.php">
+                    <form method="POST" action="aksi.php">
                       <input type="hidden" name="Id" value="<?= $data['Id'] ?>">
                       <div class="modal-body">
 
@@ -142,7 +142,7 @@ include "koneksi.php";
                       <h5 class="modal-title" id="staticBackdropLabel">Konfirmasi Hapus Data</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <form method="POST" action="aksi_laila.php">
+                    <form method="POST" action="aksi.php">
                       <input type="hidden" name="id" value="<?= $data['Id'] ?>">
                       <div class="modal-body">
 
@@ -175,7 +175,7 @@ include "koneksi.php";
                   <h5 class="modal-title" id="staticBackdropLabel">Tambah Data</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="POST" action="aksi_laila.php">
+                <form method="POST" action="aksi.php">
                   <div class="modal-body">
 
                     <div class="mb-3">
