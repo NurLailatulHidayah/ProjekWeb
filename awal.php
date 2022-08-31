@@ -491,7 +491,7 @@ include "koneksi.php";
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <form method="POST" action="aksi.php">
-                      <input type="hidden" name="id" value="<?= $data['Id'] ?>">
+                      <input type="hidden" name="Id" value="<?= $data['Id'] ?>">
                       <div class="modal-body">
 
                         <h5 class="text-center">Apakah anda yakin ingin menghapus data ini? <br>
