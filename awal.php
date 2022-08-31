@@ -377,7 +377,7 @@ include "koneksi.php";
 
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#ModalTambah">
-              Daftar
+              Tambah data
             </button>
 
             <table class="table table-bordered table-striped table-hover">
