@@ -413,6 +413,8 @@ include "koneksi.php";
                 <td><?= $data['Perusahaan'] ?></td>
                 <td>
                   <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalUbah<?= $No ?>">Ubah</a>
+                </td>
+                <td>
                   <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapus<?= $No ?>">Hapus</a>
                 </td>
               </tr>
