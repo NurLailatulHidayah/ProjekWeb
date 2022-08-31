@@ -68,7 +68,7 @@ if($cek > 0){
  <div class="panel_login">
   <p class="tulisan_atas">Silahkan Masuk</p>
 
-  <form action="cek_login.php" method="post">
+  <form action="index.php" method="post">
    <label>Username</label>
    <input type="text" name="username" class="form_login" placeholder="Username" required="required">
 
