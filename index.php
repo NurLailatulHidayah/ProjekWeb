@@ -3,7 +3,7 @@
   $server = "localhost";
   $user = "root";
   $pass = "";
-  $database = "pendaftar_kp";
+  $database = "pendaftar_ujiankp";
 
 ?>
 <h2> Pendaftaran Ujian KP </h2>
