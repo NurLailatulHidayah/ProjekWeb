@@ -84,7 +84,7 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="awal.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Pendaftar Ujian_KP</span></a>
             </li>
