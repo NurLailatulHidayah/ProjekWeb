@@ -79,13 +79,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Koordinator_KP</span></a>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
                     <span>Pendaftaran_KP</span></a>
             </li>
 
@@ -110,6 +103,13 @@
                         <a class="collapse-item" href="JadwalUjian.php">Jadwal Ujian</a>
                     </div>
                 </div>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Admin_KP</span></a>
             </li>
 
 
