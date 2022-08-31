@@ -27,16 +27,16 @@ if($cek > 0){
   $_SESSION['username'] = $username;
   $_SESSION['level'] = "admin";
   // alihkan ke halaman dashboard admin
-  header("location:index.php");
+  header("location:fitri_awal.php");
 
 
  }else{
 
   // alihkan ke halaman login kembali
-  header("location:koor.php?pesan=gagal");
+  header("location:index.php?pesan=gagal");
  } 
 }else{
- header("location:koor.php?pesan=gagal");
+ header("location:index.php?pesan=gagal");
 }
 
 ?>

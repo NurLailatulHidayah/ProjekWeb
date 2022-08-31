@@ -18,7 +18,7 @@
  <div class="panel_login">
   <p class="tulisan_atas">Silahkan Login</p>
 
-  <form action="index.php" method="post">
+  <form action="fitri_awal.php" method="post">
    <label>Username</label>
    <input type="text" name="username" class="form_login" placeholder="Username" required="required">
 
