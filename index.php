@@ -6,7 +6,7 @@
   $database = "pendaftar_kp";
 
 ?>
-<h2> Pendaftar Ujian KP </h2>
+<h2> Pendaftaran Ujian KP </h2>
 
 <table border="1">
 	<tr>
