@@ -20,12 +20,12 @@ if (isset($_POST['bsimpan'])) {
     if ($simpan) {
         echo "<script>
                 alert('Simpan data succes!');
-                document.location='index.php';
+                document.location='laila.php';
                 </script>";
     } else {
         echo "<script>
                 alert('Simpan data Gagal!');
-                document.location='index.php';
+                document.location='laila.php';
                 </script>";
     }
 }
@@ -49,12 +49,12 @@ if(isset($_POST['bubah'])){
     if ($ubah){
         echo "<script>
                 alert('Ubah Data Sukes!');
-                document.location='index.php';
+                document.location='laila.php';
                 </script>";
     }else{
         echo "<script>
                 alert('Ubah Data Gagal!');
-                document.location='index.php';
+                document.location='laila.php';
                 </script>";
     }
 }
@@ -68,12 +68,12 @@ if (isset($_POST['bhapus'])) {
     if ($hapus) {
         echo "<script>
                 alert('Hapus data succes!');
-                document.location='index.php';
+                document.location='laila.php';
                 </script>";
     } else {
         echo "<script>
                 alert('Hapus data Gagal!');
-                document.location='index.php';
+                document.location='laila.php';
                 </script>";
     }
 }
