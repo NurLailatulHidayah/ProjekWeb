@@ -89,30 +89,27 @@
                     <span>Pendaftar Ujian_KP</span></a>
             </li>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-                    aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Unggah</span>
-                </a>
-                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="SuratIzin.php">Surat Izin</a>
-                        <a class="collapse-item" href="JadwalUjian.php">Jadwal Ujian</a>
-                    </div>
-                </div>
+             <!-- Nav Item - Charts -->
+             <li class="nav-item">
+                <a class="nav-link" href="alvin.php">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Unggah</span></a>
             </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="mahasiswa1.php">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Admin_KP</span></a>
+                    <span>Data Mahasiswa</span></a>
             </li>
 
-
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="nilai.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Nilai Mahasiswa</span></a>
+            </li>
+            
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">

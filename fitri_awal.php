@@ -98,9 +98,16 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="mahasiswa1.php">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Admin_KP</span></a>
+                    <span>Data Mahasiswa</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="nilai.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Nilai Mahasiswa</span></a>
             </li>
 
 
