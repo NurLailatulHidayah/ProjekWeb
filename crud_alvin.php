@@ -7,7 +7,7 @@ include "koneksi.php";
 if (isset($_POST['bsimpan'])) {
 
     //persiapan simpan data baru
-    $aimpan = mysqli_query($koneksi, "INSERT INTO unggah (surat_izin, jadwal_ujian)
+    $simpan = mysqli_query($konek, "INSERT INTO unggah (surat_izin, jadwal_ujian)
                                      VALUES ('$_POST[tsurat_izin]',
                                              '$_POST[tjadwal_ujian]') ");
 
@@ -15,12 +15,12 @@ if (isset($_POST['bsimpan'])) {
     if ($simpan) {
         echo "<script>
                 alert('Simpan data sukses!')
-                document.location='index.php';
+                document.location='alvin.php';
              </script>";
     }else {
         echo "<script>
                 alert('Simpan data Gagal!')
-                document.location='index.php';
+                document.location='alvin.php';
              </script>";
     }
 }
@@ -30,7 +30,7 @@ if (isset($_POST['bsimpan'])) {
 if (isset($_POST['bubah'])) {
 
     //persiapan ubah data baru
-    $ubah = mysqli_query($koneksi, "UPDATE unggah SET
+    $ubah = mysqli_query($konek, "UPDATE unggah SET
                                                     surat_izin = '$_POST[tsurat_izin]',
                                                     jadwal_ujian = '$_POST[tjadwal_ujian]'
                                                 WHERE id = '$_POST[id]'
@@ -40,12 +40,12 @@ if (isset($_POST['bubah'])) {
     if ($ubah) {
         echo "<script>
                 alert('Ubah data sukses!')
-                document.location='index.php';
+                document.location='alvin.php';
              </script>";
     }else {
         echo "<script>
                 alert('Ubah data Gagal!')
-                document.location='index.php';
+                document.location='alvin.php';
              </script>";
     }
 }
@@ -54,18 +54,18 @@ if (isset($_POST['bubah'])) {
 if (isset($_POST['bhapus'])) {
 
     //persiapan simpan data baru
-    $hapus = mysqli_query($koneksi, "DELETE FROM unggah WHERE id = '$_POST[id]'");
+    $hapus = mysqli_query($konek, "DELETE FROM unggah WHERE id = '$_POST[id]'");
 
     //jika hapus sukses
     if ($hapus) {
         echo "<script>
                 alert('hapus data sukses!')
-                document.location='index.php';
+                document.location='alvin.php';
              </script>";
     }else {
         echo "<script>
                 alert('hapus data Gagal!')
-                document.location='index.php';
+                document.location='alvin.php';
              </script>";
     }
 }
