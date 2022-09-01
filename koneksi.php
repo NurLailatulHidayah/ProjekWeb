@@ -1,16 +1,9 @@
 <?php
+$koneksi = mysqli_connect("localhost","root","","belajar_multilevel");
 
-//koneksi ke database
-$server = "localhost";
-$user = "root";
-$password ="";
-$database ="db_koordinator";
+// Check connection
+if (mysqli_connect_errno()){
+ echo "Koneksi database gagal : " . mysqli_connect_error();
+} 
 
-//buat koneksi
-$konek = mysqli_connect($server, 
-                        $user, 
-                        $password, 
-                        $database) 
-                        or die(mysqli_error($konek));
-?> 
-
+?>
