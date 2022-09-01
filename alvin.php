@@ -379,13 +379,13 @@ include "koneksi.php";
             <th>No.</th>
             <th>Surat_izin</th>
             <th>Jadwal Ujian</th>
-             <th>Aksi</th>
+             <th colspan="2">Aksi</th>
             </tr->
 
             <?php
             //persiapan menampilkan data
             $No = 1;
-            $tampil = mysqli_query($konek, "SELECT * FROM tmhs ORDER BY id DESC");
+            $tampil = mysqli_query($konek, "SELECT * FROM unggah ORDER BY id DESC");
             while ($data = mysqli_fetch_array($tampil)) :
             ?>
           <tr>
@@ -394,6 +394,8 @@ include "koneksi.php";
             <td><?= $data['jadwal_ujian'] ?></td>
             <td>
               <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalUbah<?= $No ?>">Ubah</a>
+            </td>
+            <td>
               <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapus<?= $No ?>">Hapus</a>
             </td>
           </tr>
