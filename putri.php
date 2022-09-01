@@ -380,7 +380,7 @@ include "koneksi.php";
                         <th>Anggota Kelompok Id</th>
                         <th>Dosen Id</th>
                         <th>Perusahaan Id</th>
-                        <th colspan="5">Aksi</th>
+                        <th colspan="2">Aksi</th>
                     
                     </tr>
 
@@ -402,6 +402,8 @@ include "koneksi.php";
                     <td><?=$data['Perusahaan_Id']?></td>
                     <td>
                         <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalUbah<?= $no ?>">Ubah</a>
+                    </td>
+                    <td>
                         <a href="#" class="btn btn-danger"data-bs-toggle="modal" data-bs-target="#modalHapus<?= $no ?>">Hapus</a>
                     </td>
                 </tr>
