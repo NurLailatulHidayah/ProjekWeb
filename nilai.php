@@ -345,7 +345,7 @@
                 <?php
 
 //panggil konek database
-require "koneksi1.php";
+require "koneksi.php";
 
 
 ?>
