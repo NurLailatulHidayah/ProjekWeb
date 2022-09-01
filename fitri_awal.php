@@ -89,6 +89,13 @@
                     <span>Pendaftar Ujian_KP</span></a>
             </li>
 
+             <!-- Nav Item - Charts -->
+             <li class="nav-item">
+                <a class="nav-link" href="alvin.php">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Unggah</span></a>
+            </li>
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
