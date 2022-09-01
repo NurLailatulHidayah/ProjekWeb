@@ -11,7 +11,7 @@ $password = $_POST['password'];
 
 
 // menyeleksi data user dengan username dan password yang sesuai
-$login = mysqli_query($konek,"SELECT * FROM pengguna WHERE username='$username' and password='$password'");
+$login = mysqli_query($koneksi,"SELECT * FROM tb_pengguna WHERE username='$username' and password='$password'");
 // menghitung jumlah data yang ditemukan
 $cek = mysqli_num_rows($login);
 
@@ -29,6 +29,13 @@ if($cek > 0){
   // alihkan ke halaman dashboard admin
   header("location:fitri_awal.php");
 
+ // cek jika user login sebagai pegawai
+ }else if($data['level']=="biasa"){
+  // buat session login dan username
+  $_SESSION['username'] = $username;
+  $_SESSION['level'] = "biasa";
+  // alihkan ke halaman dashboard pegawai
+  header("location:halaman_biasa.php");
 
  }else{
 
