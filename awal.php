@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="fitri_awal.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -112,7 +112,7 @@
             
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Logout</span></a>
             </li>
@@ -367,13 +367,13 @@ include "koneksi.php";
         </div>
 
        <div class="card mt-3">
-          <div class="card-header bg-success text-white">
+          <div class="card-header bg-primary text-white">
             Data Mahasiswa Pendaftar
           </div>
           <div class="card-body">
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#ModalTambah">
+            <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#ModalTambah">
               Tambah data
             </button>
 

@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="fitri_awal.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -109,10 +109,9 @@
                     <i class="fas fa-fw fa-table"></i>
                     <span>Nilai Mahasiswa</span></a>
             </li>
-
-
-           <!-- Nav Item - Tables -->
-           <li class="nav-item">
+            
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
                 <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Logout</span></a>
@@ -342,7 +341,8 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                   <h1>ini adalah halaman Jadwal Ujian</h1>
+                   <h1>Haiii</h1><br>
+                   <h1>Selamat Datang Di Webside Kami.</h1>
                 </div>
                 <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
