@@ -342,7 +342,7 @@
                 <div class="container-fluid">
 
                    <h1>Haiii</h1><br>
-                   <h1>Selamat Datang Di Webside Kami.</h1>
+                   <h1>Selamat Datang Di Website Kami.</h1>
                 </div>
                 <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
