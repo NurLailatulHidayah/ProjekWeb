@@ -507,11 +507,8 @@ include "koneksi.php";
               </div>
               <!--Akhir Modal hapus -->
 
-
-
             <?php endwhile; ?>
           </table>
-
 
           <!--Awal Modal tambah data-->
           <div class="modal fade" id="ModalTambah" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
